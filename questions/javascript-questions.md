@@ -2,6 +2,8 @@
 
 * Explain event delegation
 * Explain how `this` works in JavaScript
+  this
+  
 * Explain how prototypal inheritance works
 * What do you think of AMD vs CommonJS?
 * Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
@@ -44,15 +46,31 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 * What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?
 * What tools and techniques do you use debugging JavaScript code?
 * What language constructions do you use for iterating over object properties and array items?
+  for loops, foreach, while loops, for in, for of
+  
 * Explain the difference between mutable and immutable objects.
+  Mutable objects can be changed after they have been created while immutable objects cannot be changed after they have been created
   * What is an example of an immutable object in JavaScript?
+    A JS example would be string
+      let a = 1;
+      let b = a;
+      a++;
+      
   * What are the pros and cons of immutability?
+    
   * How can you achieve immutability in your own code?
+    Object.freeze() will turn an object into an immutable object
+    
 * Explain the difference between synchronous and asynchronous functions.
 * What is event loop?
   * What is the difference between call stack and task queue?
 * Explain the differences on the usage of `foo` between `function foo() {}` and `var foo = function() {}`
+
 * What are the differences between variables created using `let`, `var` or `const`?
+  This is all about block scope. const defines a variable PI that will not change and cannot change: the value would be 3.1459
+  let deines a variable that is visible to the current scope that it is defined in. Inside a function foo(), a variable define with let will only be visible to that function and not outside of that function
+  var defines a varabile that is visible inside or outside of the current scope.
+  
 * What are the differences between ES6 class and ES5 function constructors?
 * Can you offer a use case for the new arrow `=>` function syntax? How does this new syntax differ from other functions?
 * What advantage is there for using the arrow syntax for a method in a constructor?
